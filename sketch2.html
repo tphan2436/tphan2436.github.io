@@ -34,33 +34,28 @@
 
 				scene = new THREE.Scene();
 				
-			
-				
 				
 				// paste your code from the geometryGUI here
 				
-				map = THREE.ImageUtils.loadTexture('../texturez/proxy.php?url=https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
-				geometry = new THREE.TorusGeometry(132.57, 31.2, 27, 16, 37.7);
-				material = new THREE.MeshBasicMaterial({shading: THREE.FlatShading, color: 0xdcdcdc, map: map});
+				geometry = new THREE.TorusGeometry(143.35, 22.57, 40, 19, 43.98);
+				material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
 				mesh = new THREE.Mesh(geometry, material);
-				map.wrapS = map.wrapT = THREE.RepeatWrapping;
-				map.repeat.set( 1, 1 );
 				scene.add(mesh);
-
+			
 
 
 			}
 
-			function draw() {camera.position.z = Math.sin( Date.now() * 0.002 ) * 500;
-				camera.position.y = Math.sin( Date.now() * 0.002 ) * 300;
-				camera.lookAt(mesh.position);
+			function draw() {
+				
+				camera.position.x = Math.sin( Date.now() * 0.002 ) * 100;
+				mesh.position.x = Math.sin( Date.now() * 0.001 ) * 50;  
+				mesh.rotation.z = Date.now() * 0.0005;
+				
+				
+				
 
 				requestAnimationFrame( draw );
-							 var s = Math.sin( Date.now() * 0.002 );
-				mesh.material.color.setHSL(0.5, s, 0.5 );
-							 mesh.position.x = Math.sin( Date.now() * 0.001 ) * 50;  
-				mesh.rotation.z = Date.now() * 0.0005;
-
 				
 				// experiment with code from the snippets menu here
 
