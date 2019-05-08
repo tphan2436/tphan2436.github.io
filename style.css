@@ -12,13 +12,12 @@ body{
 }
 
 h1{
+	background-color: lightblue;
 	text-align: center;
 	word-spacing: 30px;
 	letter-spacing: 0px;
 	font-family: 'Dosis', sans-serif;
 	font-size: 60px;
-	margin-top: 10px;
-	margin-bottom: -30px;
 }
 
 
@@ -38,9 +37,8 @@ ul{
 	margin: 0px;
 	padding: 10px;
 	overflow: hidden;
-	padding-right: 50px;
-
-	
+	background-color: lightblue;
+	border: 2px dotted grey;
 
 }
 
@@ -52,24 +50,24 @@ ul li{
 	list-style-type: none;
 	margin-left: 50px;
 	font-size: 2em;
-	background-color: lightblue;
+	background-color: white;
 	padding: 10px;
-	
-
+	border-left: 2px dotted grey;
+	border-right: 2px dotted grey;
 }
 
 a:link {
-  color: white;
+  color: grey;
   text-decoration: none;
 }
 
 a:hover {
-	color: grey;
+	color: lightblue;
 	text-decoration: none;
 }
 
 a:visited {
-	color: lavender;
+	color: pink;
 	text-decoration: none
 }
 
@@ -78,13 +76,13 @@ p{
 	padding: 5px;
 	font-size: 20px;
 	text-align: center;
+	background-color: lightgrey;
 	margin-right: 50px;
 	margin-left: 50px;
 }
 
 footer{
-	text-align: center;
-	padding-top: 50px;
+	margin-top: 20px;
 }
 
 
